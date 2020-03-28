@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div>
+    <a href="info.html" th:href="@{/paper/answer(name=${name})}" >查看答案</a>
+    <a th:href="@{/}" >试卷列表</a>
+</div>
+<div th:utext="${content}"></div>
+
+</body>
+</html>

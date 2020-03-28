@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<a th:href="@{/paper/(name=${name})}" >查看试卷</a>
+<a th:href="@{/}" >试卷列表</a>
+<div th:utext="${content}"></div>
+
+</body>
+</html>

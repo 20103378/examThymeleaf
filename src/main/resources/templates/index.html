@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<ul th:each="name : ${names}">
+    <li><a href="info.html" th:href="@{/paper(name=${name})}" th:text="${name}"></a></li>
+</ul>
+</body>
+
+</html>
